@@ -10,7 +10,13 @@ SNS.Main.init = function()
 		backgroundColor : '#d6d8de',
    	});
    	
-   	this.tableview = Ti.UI.createTableView();
+   	this.tableview = Ti.UI.createTableView({
+   		editable: true
+   	});
+   	this.tableview.addEventListener('delete', function(e){
+   		
+   	});
+   	
    	this.win.add(this.tableview);
 };
 

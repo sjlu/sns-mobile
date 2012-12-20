@@ -38,10 +38,6 @@ SNS.open = function(window)
  */
 SNS.Main.init();
 SNS.Login.init();
-/*
- * Render the frontpage before flip.
- */
-SNS.Main.open();
 
 /*
  * Load interface when everything is finished loading.
@@ -49,6 +45,11 @@ SNS.Main.open();
 SNS.tab.window = SNS.Main.win;
 SNS.tabs.addTab(SNS.tab);
 SNS.tabs.open();
+
+/*
+ * Render the frontpage before flip.
+ */
+SNS.Main.open();
 
 /**
  * Tell the app what to do when resuming.
